@@ -12,7 +12,7 @@ layout: default
 
   <div class="posts">
     {% for post in paginator.posts %}
-    <article class="post-teaser">
+    <div class="post-teaser">
       {% if post.thumbnail %} 
       <div class="post-img">
          <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
@@ -36,7 +36,7 @@ layout: default
             </a>-->
           </div>
       </span>
-    </article>
+    </div>
     {% endfor %}
   </div>
 
