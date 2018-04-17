@@ -1,4 +1,7 @@
-# Type on Strap [![Build Status](https://travis-ci.org/Sylhare/Type-on-Strap.svg?branch=master)](https://travis-ci.org/Sylhare/Type-on-Strap) [![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
+# Type on Strap 
+
+[![Build Status](https://travis-ci.org/Sylhare/Type-on-Strap.svg?branch=master)](https://travis-ci.org/Sylhare/Type-on-Strap) 
+[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
 
 A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) with a few new features:
 
@@ -203,6 +206,23 @@ $$
   \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
 $$
 ```
+
+### Post excerpt
+
+The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) are the first lines of an article that is display on the blog page. The length of the excerpt has a default of around `250` characters and can be manually set in the post using:
+```yml
+---
+layout: post
+title: Sample Page
+excerpt_separator: <!--more-->
+---
+
+some text in the excerpt
+<!--more-->
+... rest of the text not shown in the excerpt ...
+```
+
+The html is stripped out of the excerpt so it only display text.
 
 ## Layout
 Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
